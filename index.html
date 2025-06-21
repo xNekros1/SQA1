@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión Biblioteca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+  <form id="registroForm">
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required />
+    <button type="submit">Registrar</button>
+    <p id="mensajeCorreo"></p>
+  </form>
+
+  <h2>Búsqueda de Libros</h2>
+  <input type="text" id="busqueda" placeholder="Buscar libro..." />
+  <button onclick="buscarLibro()">Buscar</button>
+  <p id="resultadoBusqueda"></p>
+
+  <h2>Préstamo de Libro</h2>
+  <button onclick="prestarLibro()">Pedir prestado</button>
+  <button onclick="devolverLibro()">Devolver libro</button>
+  <p id="estadoLibro"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
